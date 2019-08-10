@@ -1,5 +1,8 @@
 node{
     try{
+withCredentials([usernamePassword(credentialsId: 'myUser', passwordVariable: 'pword', usernameVariable: 'uname')]) {
+    sh 'echo uname=$uname pwd=$pword'
+}
         stage('No-op'){
             sh 'ls'
         }
