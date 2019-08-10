@@ -1,11 +1,7 @@
 node{
     try{
-withCredentials([usernamePassword(credentialsId: 'myUser', passwordVariable: 'password', usernameVariable: 'username')]) {
-    
-}
         stage('No-op'){
             sh 'ls'
-	   echo "This is my username : ${username}"
         }
         stage('Human'){
             input "Does it good to go"
