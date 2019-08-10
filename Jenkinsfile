@@ -4,7 +4,7 @@ withCredentials([usernamePassword(credentialsId: 'myUser', passwordVariable: 'pa
     
 }
         stage('No-op'){
-            sh 'ls'i
+            sh 'ls'
 	   echo "This is my username : ${username}"
         }
         stage('Human'){
