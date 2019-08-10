@@ -15,7 +15,7 @@ node{
     }
     finally{
         if (currentBuild.result == null){
-            echo "I am successful"
+            echo "I am successful and I am running ${env.BUILD_ID} on jenkins ${env.JENKINS_URL}"
         }
         else{
             echo "I am failed"
