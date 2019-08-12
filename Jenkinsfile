@@ -7,7 +7,7 @@ withCredentials([usernamePassword(credentialsId: 'myUser', passwordVariable: 'pw
             sh 'ls'
         }
         stage('Human'){
-            input "Does it good to go"
+            input "Does it good to gooo"
         }
         stage('Deploy'){
             echo "I m moving forward"
